@@ -12,9 +12,9 @@ const pass = 'abcd@1234';
 
 test("Log in test", async t => {
     await login.LoginMethod(email, pass);
-    //await t.click("#logout2");
+
 })
 
-test("Getting Help", async t => {
+test.only("Getting Help", async t => {
     await help.HelpMethod();
 })
