@@ -3,7 +3,7 @@ import Login from './elements/login';
 const login = new Login();
 
 fixture`Getting Started`
-    .page`https://dev.tuteair.com/`
+    .page`https://dev-tuteair-frontend-app-service.azurewebsites.net/`
 
 const email = 'fkkabir70@gmail.com';
 const pass = 'abcd@1234';
