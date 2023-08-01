@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "testcafe chrome -c 1 test.js"
+    "test": "testcafe chrome --start-maximized -c 1 test.js"
   },
   "dependencies": {
     "node": "^20.5.0",
