@@ -9,10 +9,12 @@ class AddNewSub {
 
     async clickTutorAccountLink() {
         await t.click(this.tutorAccountLink);
+        await t.wait(2000);
     }
 
     async clickAddTuitionButton() {
         await t.click(this.addTuitionButton);
+        await t.wait(2000);
     }
 
     async performActions() {

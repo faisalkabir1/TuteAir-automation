@@ -14,8 +14,8 @@ class Login {
         await t
             .setNativeDialogHandler(() => true)
             .click(this.signinBtn);
-        // Wait for 5 seconds
-        await t.wait(5000);
+        // Wait for 3 seconds
+        await t.wait(3000);
     }
 }
 export default Login;
