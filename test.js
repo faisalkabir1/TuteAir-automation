@@ -4,7 +4,7 @@ import Help from './elements/help';
 const login = new Login();
 const help = new Help();
 
-fixture`Getting Started`
+fixture`TuteAir Test`
     .page`https://dev-tuteair-frontend-app-service.azurewebsites.net/`
 
 const email = 'fkkabir70@gmail.com';
@@ -15,6 +15,11 @@ test("Log in test", async t => {
 
 })
 
-test.only("Getting Help", async t => {
-    await help.HelpMethod();
+test("Getting Help", async t => {
+    await help.HelpMethodTutor();
+})
+
+test.only("Login and Add Tuition", async t=> {
+    await login.LoginMethod(email, pass);
+    
 })
