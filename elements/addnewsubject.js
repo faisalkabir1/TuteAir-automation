@@ -6,7 +6,8 @@ class AddNewSub {
         this.tutorAccountLink = Selector('.sidebar-list a.sidebar-link.sidebar-title').withText('Tutor Account');
         this.addTuitionButton = Selector('.u-pearl-icon i.icofont.icofont-notebook').parent();
         this.addNew = Selector('#add-new');
-        this.subjectCategory = Selector('.css-ackcql');
+        this.subjectCategory = Selector('#react-select-6-placeholder');
+        this.optionSelector = Selector('.css-1hwfws3')
     }
 
     async clickTutorAccountLink() {
@@ -20,16 +21,11 @@ class AddNewSub {
     }
     async addNewSubject() {
         await t.click(this.addNew);
+        await t.wait(2000);
         await t.click(this.subjectCategory);
-        const options = ['ACADEMIC', 'ANTIQUES & COLLECTIBLES', 'ARCHITECTURE', 'ART', 'ARTS'];
-
-        // Get a random index to select one of the options randomly.
-        const randomIndex = Math.floor(Math.random() * options.length);
-
-        const optionSelector = Selector(`input[id^="react-select-"]`).withAttribute('value', options[randomIndex]);
-
-        await t.click(optionSelector);
-
+        await t.wait(2000);
+        await t.click(this.optionSelector);
+        await t.wait(2000);
     }
 
     async performActions() {
