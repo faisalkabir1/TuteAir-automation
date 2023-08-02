@@ -6,8 +6,8 @@ class AddNewSub {
         this.tutorAccountLink = Selector('.sidebar-list a.sidebar-link.sidebar-title').withText('Tutor Account');
         this.addTuitionButton = Selector('.u-pearl-icon i.icofont.icofont-notebook').parent();
         this.addNew = Selector('#add-new');
-        this.subjectCategory = Selector('#react-select-6-placeholder');
-        this.optionSelector = Selector('.css-1hwfws3')
+        this.subjectCategory = Selector('.css-1d8n9bt');
+        this.optionSelector = Selector('.css-yt9ioa-option');
     }
 
     async clickTutorAccountLink() {

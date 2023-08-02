@@ -21,6 +21,7 @@ test("Getting Help", async t => {
 })
 
 test.only("Login and Add Tuition", async t => {
+    await t.resizeWindow(1920, 1080);
     await login.LoginMethod(email, pass);
 
 
